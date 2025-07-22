@@ -17,8 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         env:
-          VITE_BACKEND_URL: ${{ secrets.VITE_BACKEND_URL }}
-          VITE_WEBSOCKET_URL: ${{ secrets.VITE_WEBSOCKET_URL }}
+          VITE_BACKEND_URL: ${{ secrets.VITE_BACK_URL }}
+          VITE_WEBSOCKET_URL: ${{ secrets.VITE_API_KEY }}
         with:
           submodules: true
           lfs: false
