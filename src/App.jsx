@@ -9,7 +9,7 @@ function App() {
   const handleSearchCity = async () => {
     setCityInfo(undefined);
     try{
-      const response = await axios.get(import.meta.env.VITE_BACK_URL + "/api/weather?city=" + city);
+      const response = await axios.get("https://weather-back12aw-ccfzeye6bahyethz.canadacentral-01.azurewebsites.net/api/weather?city=" + city);
       const data = await response.data;
       setCityInfo(data);
     }catch(e){
