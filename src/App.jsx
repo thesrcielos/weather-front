@@ -6,11 +6,11 @@ import {APIProvider, Map} from '@vis.gl/react-google-maps';
 function App() {
   const [city, setCity] = useState("")
   const [cityInfo, setCityInfo] = useState(undefined)
-  const url = import.meta.env.VITE_BACK_URL;
+  const BACKEND_URL = import.meta.env.VITE_BACK_URL;
   const handleSearchCity = async () => {
     setCityInfo(undefined);
     try{
-      const response = await axios.get(url + "/api/weather?city=" + city);
+      const response = await axios.get(BACKEND_URL + "/api/weather?city=" + city);
       const data = await response.data;
       setCityInfo(data);
     }catch(e){
