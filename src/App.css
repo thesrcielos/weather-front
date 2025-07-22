@@ -1,0 +1,40 @@
+#root {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.app-container {
+ width: 600px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+input {
+  padding: px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: rgb(105, 183, 255);
+}
+
+.search{
+  width: 100%;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.info{
+  width: 100%;
+}
+
+.map{
+  width: 400px;
+  height: 400px;
+}
